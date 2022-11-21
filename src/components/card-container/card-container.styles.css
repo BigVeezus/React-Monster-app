@@ -1,26 +1,40 @@
 .card-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #afe3df;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 25px;
-    cursor: pointer;
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform 0.25s ease-out;
-  }
-  
-  .card-container:hover {
-    transform: scale(1.05);
+  display: flex;
+  flex-direction: column;
+  background-color: #afe3df;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.app-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: aqua;
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 70px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
+  body {
+    background: #F09A9D;
   }
 
   .app-title {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: aqua;
-    font-family: 'Bigelow Rules', cursive;
-    font-size: 70px;
-
+    font-size: 50px;
   }
+
+  .card-container {
+    margin-bottom: 15px;
+  }
+}
